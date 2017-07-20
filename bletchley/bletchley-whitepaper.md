@@ -1,7 +1,7 @@
-#Introducing Project "Bletchley"
-*Marley Gray, Director Blockchain Business Development and Strategy - Microsoft*
+# Introducing Project "Bletchley"
+*Marley Gray, Principle Architect PM - Microsoft - Azure Blockchain Engineering*
 
-###Microsoft's Blockchain Architecture Overview
+### Microsoft's Blockchain Architecture Overview
 
 Blockchain has captured the collective curiosity of the business and technology world and rapidly approaches the peak of the hype-cycle witnessed in other technology “fads” of the past.  However, this “fad” is different from those in that it is **largely not based on new technology**, but rather a composite of proven technologies applied to create the underpinning of Bitcoin.  However, that same technology when applied to other use cases happens to address a substantial latent pain that exists across industries.  Blockchain, or more accurately Distributed Ledger, is more of a catalyst to inspire change in the way disparate organizations work together in highly competitive markets.  Existing inter-company transactions carry enormous costs in process, procedure and crosschecking of records to come to settlement on what could turn out to be a trivial exercise using blockchain technology.  In short, blockchain or distributed ledger technologies can provide the next wave of innovation that streamlines the way business operates, the same way the web did, giving birth to a new collaborative economy.
 
@@ -9,8 +9,8 @@ Bletchley is Microsoft’s architectural approach to building an Enterprise Cons
 
 If you are already comfortable with blockchain technology and do not need an introduction, please skip forward to the [Bletchley Overview](#bletchley).
 
-##Definitions##
-###Cryptographically Tokenized Assets###
+## Definitions ##
+### Cryptographically Tokenized Assets ###
 Tokens are sometimes referred to as Digital Bearer Bonds which simply means establishing a digitally unique identity for something that can be owned or that can own other things.  Use of cryptographic one-way hashes allows for any asset, whether it be a digital or physical asset, to be represented as a token, a secure identity. 
  
 However, identity tokens are not the whole picture, you need a second piece to make a complete secure identity, the identity proof.  The proof of identity is determined with public/private keys.  Together an identity token paired with proof provides a solution for secure identity for everything. 
@@ -41,7 +41,7 @@ This allows assets to be tracked individually and collectively across organizati
 Tokens can represent all sorts of things including people, institutions, commodities, contracts and even digital currencies and sovereign or fiat currencies via pegging to existing fiat currencies. The list of things that tokenization can represent goes on and on across Equities, Bonds, Derivatives, Insurance, Loans, Diamonds, Cars, Parts, Receipts...
 
 
-###Blockchain = Cryptographically Authentic, Shared, Distributed Ledger###
+### Blockchain = Cryptographically Authentic, Shared, Distributed Ledger ###
 - Cryptographically Authentic – Uses tried and true public/private signature technology that is the backbone of e-commerce and digital signatures today.  Tokenization using this technology allows the creation of a Secure Identity and transactions that are impervious to fraud establishing a shared truth.
 - Shared – Blockchains have little value within a single organization or company. Its value is directly and arguably exponentially linked to the number of organizations or companies that participate in them. There is huge value for even the fiercest of competitors to participate with each other in these shared database implementations.  Blockchains can be public or “members only” networks providing truth without the need for intermediaries.
 - Distributed – there are many replicas of the blockchain database and no one owns it.  In fact, the more replicas there are the more authentic and secure it becomes.  When one asks the question: “How secure is the blockchain?” it is usually answered by stating the number of nodes in the network.  
@@ -68,7 +68,7 @@ Using this simple database, that is authentic, shared, not centrally owned and i
 In summary, combining tokenization with an authentic shared ledger which every participant agrees represents the immutable truth has the potential to remove massive amounts of manual, time consuming “agreement” periods dedicated to settlement.  Not only does it remove the unnecessary settlement time (*note some settlement time may still be desired*) but also the reactive fire drills required when an audit is requested by a regulator or law enforcement.  The full audit trail is created in real-time during the transaction as a by-product of using blockchain technology.  Providing an auditor access to this log in real-time is now possible as opposed to the labor-intensive look back nature of auditing today.  
   
 
-###Current Blockchain Ecosystem and Evolution###
+### Current Blockchain Ecosystem and Evolution ###
 
 ***History repeats itself…evolution***
 
@@ -87,12 +87,12 @@ This added code is called SmartContracts.  These SmartContracts operate just lik
 
 ![SmartContract](images/smartcontracts.png)
 
-Blockchain 2.0 and 1.0 differ in how things are tokenized and are transacted against.  A SmartContract is essentially a ledger of itself within the distributed ledger.  Tokenized assets exist within SmartContracts themselves.  Whereas 1.0 UTXO databases transact directly against tokenized assets and their unspent transaction outputs (UTXO).  This is not the forum to discuss which approach is better, but its safe to assume that both types of systems will exist and in fact a good argument can be made that both are needed.  An example of this could be tokenizing entities like people, organizations, assets, commodities…actual things which are created or “provenanced” on a UXTO blockchain and the applications or contracts that work with those items are “provenanced” on SmartContract based systems.  It is trivial to record the public key or hash of an item created in a UXTO database within a SmartContract. 
+Blockchain 2.0 and 1.0 differ in how things are tokenized and are transacted against.  A SmartContract is essentially a ledger of itself within the distributed ledger.  Tokenized assets exist within SmartContracts themselves.  Whereas 1.0 UTXO databases transact directly against tokenized assets and their unspent transaction outputs (UTXO).  This is not the forum to discuss which approach is better, but its safe to assume that both types of systems will exist and in fact a good argument can be made that both are needed.  An example of this could be tokenizing entities like people, organizations, assets, commodities…actual things which are created or “provenanced” on a UTXO blockchain and the applications or contracts that work with those items are “provenanced” on SmartContract based systems.  It is trivial to record the public key or hash of an item created in a UTXO database within a SmartContract. 
 
 Early blockchain applications and proof-of-concepts have found the need to have these systems interact with the outside world for time or event based things.  To allow for these applications to do so, the use of “oracles” has emerged.  Oracles can inject real world events into the blockchain database like providing a point in time price, recording actual coordinated time or an interest rate.  However, the introduction of “oracles” into these 1.0 and 2.0 system exposes what is supposed to be a deterministic execution into one that can be subjected to untrusted randomness.  How does one know or trust that, say the LIBOR, is coming from a trusted source? Is the entire environment where an oracle and inject values into the blockchain secure?
 
 <a name="bletchley">
-#Code Name “Bletchley” Overview </a>
+# Code Name “Bletchley” Overview </a>
 Open source technologies will serve as the building blocks for this ecosystem.  Supporting open standards for protocol level implementations of Peer-2-Peer/networking, consensus, database and virtual machines are key in establishing trust within the larger ecosystem and accelerates innovation.
 
 **Core/Kernel/Universal Protocol**
@@ -113,11 +113,11 @@ For example, in financial services, a distributed ledger that meets the performa
 
 A modular framework will allow consortiums to pick the best of breed components and build their distributed applications regardless of the detail underneath.  Additionally, it will allow for the components to change barring any dependencies created above the core layer.
 
-##Bletchley introduces Cryptlets##
+## Bletchley introduces Cryptlets ##
 
-Cryptlets are the principal building blocks for introducing a secure blockchain middleware tier into the architecture. Given the distributed nature of blockchain, this middleware naturally functions as a service in the cloud (Azure/Azure Stack, AWS, Google, Private). 
+Cryptlets are the principal building blocks for introducing a secure blockchain middleware tier into the architecture. Given the distributed nature of blockchain, this middleware naturally functions as a service in the cloud (Azure/Azure Stack, AWS, Google, Private) and is more accurately called an Application Fabric. 
 
-In what is referred to as blockchain 1.0 & 2.0, if external data or events based on time or market conditions needs to interact with the blockchain, an “oracle” is required.  There is no standard way to supply “oracle” data securely and can quickly become an issue in multi-party SmartContracts.  Calling code or data outside a SmartContract or blockchain in general is breaking the trust barrier threatening the authenticity of the dependent transactions.  Cryptlets supply this functionality.
+In what is referred to as blockchain 1.0 & 2.0, if external data or events based on time or market conditions needs to interact with the blockchain, an “oracle” is required.  There is no standard way to supply “oracle” data securely, which can quickly become an issue in multi-party SmartContracts.  Calling code or data outside a SmartContract or blockchain in general is breaking the trust barrier threatening the authenticity of the dependent transactions.  Cryptlets supply this functionality.
 
 
 ![Cryptlets](images/cryptlets.png)
@@ -126,7 +126,7 @@ Cryptlets are off-chain code components that are written in any language, execut
 
 A CryptoDelegate is the function “hook” within the SmartContract Virtual Machine that calls the Cryptlet from the SmartContract code extending the secure and authentic envelope for transactions.  Cryptlets are registered at the attested host^1 and referenced or created automatically by developers.
 
-There are two basic types of Cryptlets; Utility and Contract.  Utility Cryptlets make up the bulk of blockchain middleware providing horizontal services like encryption, time and date events, external data access and authentication services.  Utility Cryptlets each have their own identification and attested signatures that are registered for use in the cloud.  Developers can discover and enlist Cryptlets into their SmartContracts to create more robust and trusted transactions.
+There are two basic types of Cryptlets; Utility and Contract.  Utility Cryptlets make up the bulk of blockchain fabric providing horizontal services like encryption, time and date events, external data access and authentication services.  Utility Cryptlets each have their own identification and attested signatures that are registered for use in the cloud.  Developers can discover and enlist Cryptlets into their SmartContracts to create more robust and trusted transactions.
 
 Contract Cryptlets are full delegation engines that act as a SmartContract surrogate off the chain.  These Cryptlets provide all the execution logic and securely store the data in the SmartContract.  Contract Cryptlets are bound to their SmartContract and created on the fly when the SmartContract is deployed to the blockchain.  Because Contract Cryptlets do not execute in the Virtual Machine they do not run on all nodes in a blockchain, they can run in parallel and execute on vertically scaled systems for greater performance.
 
@@ -150,17 +150,17 @@ Using Cryptlets via the CryptoDelegate, the security envelope is extended from t
 
 Additionally, Cryptlets and or their CryptletContainer could be signed by or include digital signatures from identities that the Cryptlet could do work “on-behalf of”.  For example, a user could create a Cryptlet and sign it with their digital signature and when invoked would perform actions as an agent for the user in a business process.  
 
-The addition of this middleware tier can be thought of as Blockchain 3.0; Data and Logic on a chain with Cryptlets called via a CryptoDelegate from a Smart Contract for off-chain functionality.
+The addition of this Cryptlet Fabric tier can be thought of as Blockchain 3.0; Data and Logic on a chain with Cryptlets called via a CryptoDelegate from a Smart Contract for off-chain functionality.
 
 
 ![3.0](images/evolution.png)
 
-##Blockchain Middleware##
+## Blockchain Fabric ##
 Since a distributed ledger network’s value is multiplied by the number of different participants, it becomes obvious that consortiums will dominate the landscape.  This brings up the need for interoperability.  And while we are at it…management and operations, privacy, identity, key management and an enhanced execution model rounds out the list of initial enterprise consortium requirements.  There will be more, but we have to start somewhere.
 
-Blockchain Middleware is essentially an “Enterprise Consortium Distributed Ledger Fabric” that would look and feel like traditional middleware, except it would span the globe functioning largely as APIs or Platform as a Service.
+Blockchain Fabric is essentially an “Enterprise Consortium Distributed Ledger Fabric” that would look and feel like traditional middleware, except it would span the globe functioning largely as APIs or Platform as a Service.
  
-This middleware would provide the following core services:
+This Fabric would provide the following core services:
 
 - **Identity and Certificate Services** - functionality found in both Azure Active Directory and Key Vault to provide PaaS services for authentication, authorization, key issuance, storage, access and lifecycle management.  Providing Cryptlet registration and policy as well as establishing identity for people, organizations, key transactions and contracts and things, this service can be a platform for others to build vertical services like a KYC (“know your customer”) service, asset registration and federation, etc.
 - **Encryption Services** – partial payload encryption, or field level encryption for blockchain transactions with various encryption schemes (homomorphic, threshold, etc.) to make secret those values that should only be seen by the owner and counter parties + regulators
@@ -174,11 +174,11 @@ This middleware would provide the following core services:
 
 The Base Platform Tier can be any SmartContract (Ethereum, Eris, etc.) or UTXO (Hyperledger, etc.) implementation.  If the actual platform chosen supports the Bletchley pluggable model, then the underlying modules can be swapped out for partner offerings like Tendermint and Intel’s POET.
 
-The Middleware Tier can be consumed by any consortium node either by direct integration of the CryptoDelegate in the VM or UTXO Adapter, regardless of the node’s location (Azure, AzureStack, private datacenter, AWS, etc.).
+The Fabric Tier can be consumed by any consortium node either by direct integration of the CryptoDelegate in the VM or UTXO Adapter, regardless of the node’s location (Azure, AzureStack, private datacenter, AWS, etc.).
 
-Middleware to provide the common Enterprise Consortium Blockchain Fabric needed for vertical solutions to be built.  Integration of existing tools can expose distributed ledger capabilities to end users in a manner with which they are familiar.
+Fabric to provide the common Enterprise Consortium Blockchain Fabric needed for vertical solutions to be built.  Integration of existing tools can expose distributed ledger capabilities to end users in a manner with which they are familiar.
 
-Additionally, whole new categories within the Marketplace can be developed.  Base platform components, additional distributed middleware services, Cryptlets as well as full SmartContract libraries can be discovered, purchased and used right within the tools end users use every day.
+Additionally, whole new categories within the Marketplace can be developed.  Base platform components, additional distributed Fabric services, Cryptlets as well as full SmartContract libraries can be discovered, purchased and used right within the tools end users use every day.
 
 A bank can create a certified Commercial Loan SmartContract and list it on the marketplace to get paid for each instance created.  A small business owner can select a OpenProjectFundingRequest SmartContract to crowd source his next project.  A developer can find a KYC Cryptlet that will meet the requirements for his application and a consortium can discover the next best consensus algorithm to try out to improve their performance.
 
@@ -189,7 +189,7 @@ Eventually, Consortiums will form and settle into their networks.  These consort
 ***Example Consortium***
 ![Consortium](images/consortiumrings.png)
 
-#Summary
+# Summary
 
 The evolution of blockchain implementations mirrors that of the web generation of technologies.  We see the need for middleware to be introduced into this ecosystem to supply enterprise grade services around identity, security, cryptography, scale, tooling, management, monitoring and reporting.  The difference this time is the cloud.
   
@@ -200,3 +200,5 @@ Creating this open ecosystem will take some time.  But if done properly the comb
 More about Bletchley will be disclosed and discussed at [Microsoft's World Wide Partner Conference July 12-16th in Toronto.](https://partner.microsoft.com/en-US/wpc)  See you there!
 
 ^1 *Similar to [Codius](https://www.codius.org/)* suggested by [Ripple](http://ripple.com)
+_____
+*This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.*
